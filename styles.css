@@ -1,0 +1,217 @@
+/* Default styles for larger screens */
+body {
+    background-color: #121212;
+    color: rgb(255, 255, 255);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto";
+}
+
+.navbar-custom {
+    background-color: #202124;
+    color: white;
+}
+
+.modal-title {
+    text-align: center;
+    width: 100%;
+}
+
+.modal-body {
+    padding: 20px 30px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar {
+    height: 90px;
+}
+
+.first-half {
+    color: #FFA500;
+    font-size: 50px;
+}
+
+.second-half {
+    color: white;
+    font-size: 50px;
+    margin-left: 5px;
+}
+
+h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+
+.modal-body, .modal-header, .modal-footer {
+    background-color: #121212;
+    color: white;
+}
+
+.modal-content, .modal-footer, .modal-header {
+    border: 1px solid #202124;
+}
+
+.form-group input {
+    background-color: #202124;
+    color: white;
+    border: 1px solid #121212;
+}
+
+.form-group textarea {
+    background-color: #202124;
+    color: white;
+    border: 1px solid #121212;
+}
+
+.form-group input:focus {
+    background-color: #202124;
+    color: white;
+    border: 1px solid #121212;
+}
+
+.form-group textarea:focus {
+    background-color: #202124;
+    color: white;
+    border: 1px solid #121212;
+}
+
+.custom-table thead th {
+    background-color: #202124;
+    color: white;
+    border: none;
+}
+
+.custom-table tbody td {
+    background-color: #121212;
+    color: white;
+    border-bottom: 1px solid #202124;
+}
+
+.viewbutton button {
+    position: relative;
+    right: 1250px;
+    width: 100px;
+    height: auto;
+}
+
+#mytable {
+    width: 90%;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 5px;
+}
+
+table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-tag {
+    font-size: 20px;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .navbar {
+        height: 70px;
+    }
+
+    .first-half, .second-half {
+        font-size: 40px;
+    }
+
+    h5 {
+        top: 30px;
+    }
+
+    .viewbutton button {
+        right: 800px;
+        width: 80px;
+    }
+
+    #mytable {
+        width: 95%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    .first-half, .second-half {
+        font-size: 30px;
+    }
+
+    h5 {
+        top: 20px;
+    }
+
+    .viewbutton button {
+        right: 600px;
+        width: 70px;
+    }
+
+    #mytable {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    th, td {
+        padding: 3px;
+        font-size: 14px;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 400px) {
+    .navbar {
+        height: 50px;
+    }
+
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .first-half, .second-half {
+        font-size: 25px;
+    }
+
+    h5 {
+        top: 10px;
+    }
+
+    .viewbutton button {
+        right: 300px;
+        width: 60px;
+    }
+
+    th, td {
+        padding: 2px;
+        font-size: 12px;
+    }
+}
