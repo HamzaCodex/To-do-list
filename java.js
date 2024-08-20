@@ -53,17 +53,17 @@ $(document).ready (function(){
             <button class="btn btn-danger" id="Delete" type="button">Delete</button> `)
 
     //view modal handling
-        $('#View').click(function(){
-            var row = $(this).closest('tr');
-            var task = row.find('td').eq(0).text();
-            var description = $(this).data('description');
-            var priority = row.find('td').eq(1).html();
+    $('#View').click(function() {
+        var row = $(this).closest('tr');
+        var task = row.find('td').eq(0).text();
+        var description = $(this).data('description');
+        var priority = row.find('td').eq(1).html();
 
-            //populating view 
-            $('#exampleModalLabel2').text(task);
-            $('.viewmodalbodytext').text(description)
-            $('.viewtextmodal').html(priority)
-        })
+        // Populating view modal
+        $('#exampleModalLabel2').text(task); // Fixing the modal title
+        $('.viewmodalbodytext').text(description);
+        $('.viewtextmodal').html(priority);
+    });
 
         //edit modal handling
         $('#Edit').click(function(){
