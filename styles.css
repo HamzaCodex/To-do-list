@@ -2,9 +2,9 @@
 body {
     background-color: #121212;
     color: rgb(255, 255, 255);
-    margin: 0px;
-    padding: 0px;
-    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 .navbar-custom {
@@ -66,37 +66,25 @@ h5 {
     border: 1px solid #202124;
 }
 
-.form-group input {
+.form-group input, .form-group textarea {
     background-color: #202124;
     color: white;
     border: 1px solid #121212;
 }
 
-.form-group textarea {
+.form-group input:focus, .form-group textarea:focus {
     background-color: #202124;
     color: white;
     border: 1px solid #121212;
 }
 
-.form-group input:focus {
-    background-color: #202124;
-    color: white;
-    border: 1px solid #121212;
-}
-
-.form-group textarea:focus {
-    background-color: #202124;
-    color: white;
-    border: 1px solid #121212;
-}
-
-.custom-table thead th {
+.table-dark thead th {
     background-color: #202124;
     color: white;
     border: none;
 }
 
-.custom-table tbody td {
+.table-dark tbody td {
     background-color: #121212;
     color: white;
     border-bottom: 1px solid #202124;
@@ -187,31 +175,20 @@ table {
     }
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 400px) {
-    .navbar {
-        height: 50px;
-    }
-
-    .navbar-brand img {
-        width: 100px;
-    }
-
-    .first-half, .second-half {
-        font-size: 25px;
-    }
-
-    h5 {
-        top: 10px;
-    }
-
-    .viewbutton button {
-        right: 300px;
-        width: 60px;
-    }
-
-    th, td {
-        padding: 2px;
-        font-size: 12px;
-    }
-}
+#exampleModal2 .modal-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  #exampleModal2 .viewmodalbodytext {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #dcdcdc;
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  .viewdescription{
+    text-align: center;
+  }
