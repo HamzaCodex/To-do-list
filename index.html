@@ -72,11 +72,11 @@
         </div> 
     </div>
     <!-- Table -->
-        <table class="table custom-table" id="mytable">
+        <table class="table table-dark table-hover" id="mytable">
             <thead>
                 <tr>
                     <th>Task</th>
-                    <th>Importance</th>
+                    <th>Priority</th>
                     <th>Actions</th>
                 </tr>
             </thead>
@@ -87,19 +87,22 @@
         </table>
     <!-- View modal -->
    <!-- Modal -->
-<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
+   <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog ">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title fs-5" id="exampleModalLabel2"></h5>
+                <h1 class="modal-title"  id="exampleModalLabel2"></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <p class="viewmodalbodytext"></p>
-                <div class="viewtextmodal" id="viewtextmodel1">
-                </div>
+                <h2 class="viewdescription">Description</h2>
+                <p class="viewmodalbodytext">
+                </p>
+                <div class="viewtextmodal" id="viewtextmodel1"></div>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-warning" id="Edit" data-bs-toggle = "modal" data-bs-target="#exampleModal3" data-description= "${description}" type="button">Edit</button>
             </div>
         </div>
     </div>
