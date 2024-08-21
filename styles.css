@@ -78,16 +78,16 @@ h5 {
     border: 1px solid #121212;
 }
 
-.table-dark thead th {
+#mytable thead th {
     background-color: #202124;
     color: white;
     border: none;
-}
-
-.table-dark tbody td {
-    background-color: #121212;
-    color: white;
-    border-bottom: 1px solid #202124;
+    border-right:1px solid #000000  ;
+    font-size: 18px; /* Smaller than the main heading */
+    font-weight: 500; /* Medium weight */
+    color: #CCCCCC; /* Lighter color to differentiate from tasks */
+    text-transform: uppercase; /* Optional, for styling */
+    margin-bottom: 10px; /* Space between subheading and content */
 }
 
 .viewbutton button {
@@ -96,16 +96,27 @@ h5 {
     width: 100px;
     height: auto;
 }
-
+.view-btn,.edit-btn,.delete-btn{
+    margin: 5px; 
+}
 #mytable {
     width: 90%;
+    max-width:1000px;
     margin: 50px auto;
     border-collapse: collapse;
+}
+#mytable{
+
 }
 
 th, td {
     text-align: center;
     padding: 5px;
+}
+td{
+    font-size: 16px;
+    font-weight: 400; 
+    line-height: 1.5; 
 }
 
 table {
@@ -192,3 +203,49 @@ table {
   .viewdescription{
     text-align: center;
   }
+.row-completed{
+    background-color: rgba(34, 139, 34, 0.3); /* Darker green with more transparency */
+    color: #e0e0e0; /* Light grey for text */
+    transition: background-color 0.5s ease;
+    border-bottom: 1px solid #202124;
+}
+.row-notcompleted{
+    background-color: #121212;
+    color: #e0e0e0; /* Light grey for text */
+    transition: background-color 0.5s ease;
+    border-bottom: 1px solid #202124;
+}
+th:nth-child(1),
+td:nth-child(1) {
+    width: 20%; /* Adjust this value to your preference */
+    min-width: 80px; /* Ensures it doesn't get too small */
+}
+
+/* Make "Task" column larger */
+th:nth-child(2),
+td:nth-child(2) {
+    width: 30%; /* Adjust this value to your preference */
+}
+
+/* Priority and Actions columns */
+th:nth-child(3),
+td:nth-child(3) {
+    width: 20%;
+}
+
+th:nth-child(4),
+td:nth-child(4) {
+    width: 30%;
+}
+/* Custom color for the switch when checked */
+.form-check-input:checked {
+    background-color: #15ff00; /* Change this to your desired color */
+    border-color: #007bff;
+}
+
+/* Optionally, style the switch for when it's off */
+.form-check-input {
+    background-color: #6c757d; /* Change this to your desired off color */
+    border-color: #6c757d;
+}
+
